@@ -1,0 +1,186 @@
+/* ------All Common CSS Start------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6, p{
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.divFlex{
+    display: flex;
+}
+.textCntr{
+    text-align: center!important;
+}
+
+/* Font css start  */
+
+.fontMon{
+    font-family: "Montserrat", sans-serif;
+}
+
+.fontPop{
+    font-family: "Poppins", sans-serif;
+}
+
+.fs_xxsml{
+    font-size: 10px;
+    line-height: 12.19px;
+}
+.fs_xsml{
+    font-size: 12px;
+    line-height: 18px;
+}
+.fs_sml{
+    font-size: 13px;
+    line-height: 20x;
+}
+.fs_mdm{
+    font-size: 14px;
+    line-height: 20x;
+}
+.fs_lg{
+    font-size: 16px;
+    line-height: 24x;
+}
+.fs_xlg{
+    font-size: 20px;
+    line-height: 30x;
+}
+
+/* Font css start  */
+/* ----------------------------- */
+/* Color css start  */
+.whiteClr{
+    color: #ffffff;
+}
+.primaryClr{
+    color: #606060;
+}
+.secondaryClr{
+    color: #000022;
+}
+.lightClr{
+    color: #F2F3F4;
+}
+.activeClr{
+    color: #1EA2CA;
+}
+.availableClr{
+    color: #00BCBA;
+}
+.usedClr{
+    color: #0171BC;
+}
+
+.whiteBg{
+    background: #ffffff;
+}
+.primaryBg{
+    background: #606060;
+}
+.secondaryBg{
+    background: #000022;
+}
+.lightBg{
+    background: #F2F3F4;
+}
+.activeBg{
+    background: #1EA2CA;
+}
+.availableBg{
+    background: #00BCBA;
+}
+.usedBg{
+    background: #0171BC;
+}
+/* Color css End  */
+
+/* Padding Custom css start  */
+
+/* Padding Custom css end  */
+
+/* ------All Common CSS End------ */
+
+/* ------Navigation Bar css start -----  */
+.navbar{
+    width: 320px;
+    min-height: 100vh;
+    padding: 23px 0px 30px;
+}
+.logoDiv{
+    width: 53px;
+    height: 53px;
+    padding: 11px 7px 0px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.logoDiv img{
+    width: 100%;
+}
+.dashbordText {
+    width: 310px;
+    margin: 0px 0px 0px auto;
+    border-radius: 6px;
+    position: relative;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.dashbordText::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: #1EA2CA;
+    border-radius:0px 6px 6px 0px;
+    -webkit-border-radius:0px 6px 6px 0px;
+    -moz-border-radius:0px 6px 6px 0px;
+    -ms-border-radius:0px 6px 6px 0px;
+    -o-border-radius:0px 6px 6px 0px;
+}
+.menuList li>a, .menuList li>ul>li>a{
+    color: #ffffff!important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.navbar-expand-lg .navbar-collapse {
+    width: 100%;
+    padding: 0px 30px;
+}
+
+/* ----Navigation Bar css end -----  */
+main{
+    max-width: 1120px;
+    background: #ffffff;
+}
