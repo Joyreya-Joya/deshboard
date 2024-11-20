@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6, p{
 }
 
 .container{
-    width: 1440px;
+    width: 950px;
     margin: 0 auto;
 }
 .divFlex{
@@ -64,8 +64,12 @@ h1,h2,h3,h4,h5,h6, p{
     line-height: 24x;
 }
 .fs_xlg{
+    font-size: 18px;
+    line-height: 24x;
+}
+.fs_xxlg{
     font-size: 20px;
-    line-height: 30x;
+    line-height: 1;
 }
 
 /* Font css start  */
@@ -79,6 +83,9 @@ h1,h2,h3,h4,h5,h6, p{
 }
 .secondaryClr{
     color: #000022;
+}
+.darkClr{
+    color: #414F65;
 }
 .lightClr{
     color: #F2F3F4;
@@ -178,9 +185,141 @@ h1,h2,h3,h4,h5,h6, p{
     width: 100%;
     padding: 0px 30px;
 }
-
-/* ----Navigation Bar css end -----  */
-main{
-    max-width: 1120px;
-    background: #ffffff;
+.dropdown-menu {
+    --bs-dropdown-padding-x: .5rem;
+    --bs-dropdown-padding-y: 0rem;
+    --bs-dropdown-spacer: 0rem;
+    display: block;
 }
+/* .dropdown-menu.show {
+    display: none;
+} */
+.dropdown-item:focus, .dropdown-item:hover {
+    color: inherit;
+    background-color: transparent;
+    font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: 700;
+}
+.menuDevider {
+    height: 1px;
+    width: 130%;
+    background: #ffffff;
+    /* border-bottom: 1px solid #ffffff;
+    opacity: 1; */
+    margin: 19px 0px 20px ;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position:relative;
+}
+/* .menuDevider {
+    height: 1px;
+    margin: var(--bs-dropdown-divider-margin-y) 0;
+    overflow: hidden;
+    border-top: 1px solid blueviolet;
+    opacity: 1;
+} */
+/* ----Navigation Bar css end -----  */
+
+/* -----------User Nav CSS------  */
+.userInfoImg{
+    height: 84px;
+    width: 84px;
+    background: #D9D9D9;
+    line-height: 0;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.userNav{
+    padding: 30px 0px;
+}
+.userImage {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.blueShadow{
+    box-shadow: 1px 4px 10px #1F64FF40;
+}
+
+/* -----------User Nav CSS------  */
+/* ----------------------------- */
+/* ----- Dashboard Info Section Start ------ */
+.dashboardSection{
+    width: 100%;
+    background: url(../assets/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.dboardData{
+   border-top: 2px solid #606060;
+   padding: 10px 0px 30px;
+}
+.informationBar{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.informationBar .fa-angle-right{
+    color: #AAB2C8!important;
+}
+.infoIcon{
+    width: 42px;
+    height: auto;
+}
+.blackShadow{
+    box-shadow: 1px 4px 10px #00000040;
+}
+.cpuCard{
+    background: #F2F3F4;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.cpuImg{
+  mix-blend-mode: multiply;
+}
+.dashBordItemTitle{
+    color: #414F65;
+}
+.cnItem{
+    margin-top: 40px;
+}
+.deviderBold{
+    width: 2px;
+    height: 50%;
+    background: #414F65;
+    margin: 0px 15px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.itemCard{
+    width: 32%;
+    padding: 28px 24px 24px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* ----- Dashboard Info Section End ------ */
+/* ---------------------------  */
+/* --------  Resourse Section Start -----  */
+
+/* --------  Resourse Section END -----  */
+/* ---------------------------  */

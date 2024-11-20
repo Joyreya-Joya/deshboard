@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap’s CSS link end------  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 
     <!-- CSS Link --- -->
     <link rel="stylesheet" href="css/style.css">
@@ -25,51 +25,346 @@
 
 </head>
 
-<body>
+<body class="fontMon">
     <section class="divFlex">
         <!------ Navigation Bar Star --------  -->
-            <nav class="navbar navbar-expand-lg primaryBg align-items-start">
-                <div class="container-fluid flex-column p-0">
-                    <div class="textCntr pb-4">
-                        <div class="logoDiv mb-2">
-                            <img src="assets/Stonefly-logo.png" alt="LOGO">
-                        </div>
-                        <h6 class="fontMon fw_600 xsml whiteClr py-2">SC-172-125-82-211</h6>
-                        <p class="fontMon fw_300 xsml whiteClr">Administrator</p>
+        <nav class="navbar navbar-expand-lg primaryBg align-items-start">
+            <div class="container-fluid flex-column p-0">
+                <div class="textCntr pb-4">
+                    <div class="logoDiv mb-2">
+                        <img src="assets/Stonefly-logo.png" alt="LOGO">
                     </div>
-                    <h5 class="fs_lg fw-bold whiteClr fw-bold activeBg lh-lg px-3 dashbordText">Dashboard</h5>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse flex-column " id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll flex-column menuList">
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    SAN <i class="fa-solid fa-angle-down px-2"></i>
-                                </a>
-                                <ul class="dropdown-menu bg-transparent border-0">
-                                    <li><a class="dropdown-item" href="#">Volume</a></li>
-                                    <li><a class="dropdown-item" href="#">Create New Volume</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                </ul>
-                            </li>
-        
-                        </ul>
-                    </div>
+                    <h6 class="fontMon fw_600 xsml whiteClr py-2">SC-172-125-82-211</h6>
+                    <p class="fontMon fw_300 xsml whiteClr">Administrator</p>
                 </div>
-            </nav>
+                <h5 class="fs_lg fw-bold whiteClr fw-bold activeBg lh-lg px-3 dashbordText blueShadow">Dashboard</h5>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse flex-column" id="navbarScroll">
+                    <!-- ------------------------------------------------ -->
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll flex-column menuList">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SAN <i class="fa-solid fa-angle-down px-2"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-transparent border-0">
+                                <li><a class="dropdown-item" href="#">Volume <i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                    <ul class="dropdown-menu bg-transparent border-0">
+                                        <li><a class="dropdown-item mx-3" href="#">Create New Volume</a>
+                                            <ul class="dropdown-menu bg-transparent border-0 mx-4">
+                                                <li><a class="dropdown-item" href="#">Auto Create</a></li>
+                                                <li><a class="dropdown-item" href="#">Manual Create</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item mx-3" href="#">Host</a></li>
+                                        <li><a class="dropdown-item mx-3" href="#">Sessions</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Target Portal <i class="fa-solid fa-angle-down px-2"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- ------------------------------------------------ -->
+                    <div class="menuDevider"></div>
+                    <!-- ------------------------------------------------ -->
+                    <!-- ------------------------------------------------ -->
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll flex-column menuList">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                NAS <i class="fa-solid fa-angle-down px-2"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-transparent border-0">
+                                <li><a class="dropdown-item" href="#">Segments <i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Antivirus <i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Scaleout <i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- ------------------------------------------------ -->
+                    <div class="menuDevider"></div>
+                    <!-- ------------------------------------------------ -->
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll flex-column menuList">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resources <i class="fa-solid fa-angle-down px-2"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-transparent border-0">
+                                <li><a class="dropdown-item" href="#">Create Flash Cache <i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Flash Cache Configuration</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Create Object Storage</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Detail<i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- ------------------------------------------------ -->
+                    <div class="menuDevider"></div>
+                    <!-- ------------------------------------------------ -->
+
+                    <!-- ------------------------------------------------ -->
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll flex-column menuList">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                System <i class="fa-solid fa-angle-down px-2"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-transparent border-0">
+                                <li><a class="dropdown-item" href="#">Admin <i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Network</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">iDiagnostics<i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Notifications</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">UPS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Users <i
+                                            class="fa-solid fa-angle-down px-2"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- ------------------------------------------------ -->
+                    <div class="menuDevider"></div>
+                    <!-- ------------------------------------------------ -->
+                    <!-- ------------------------------------------------ -->
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll flex-column menuList">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Reports <i class="fa-solid fa-angle-down px-2"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-transparent border-0">
+                                <li><a class="dropdown-item" href="#">Log</a></li>
+                                <li><a class="dropdown-item" href="#">Configuration Report</a></li>
+                                <li><a class="dropdown-item" href="#">Historical Statistics</a></li>
+                                <li><a class="dropdown-item" href="#">Debug Logs</a></li>
+                                <li><a class="dropdown-item" href="#">Live Statistics</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- ------------------------------------------------ -->
+
+
+                </div>
+
+            </div>
+        </nav>
         <!------ Navigation Bar End --------  -->
 
         <!-- ------- Body part start -----  -->
-        <main>
+        <main class="whiteBg w-100 mx-auto">
+            <div class="container">
+
+                <!-- ---------- User Manu start-------  -->
+                <div class="userNav  d-flex justify-content-between align-items-start">
+                    <div class="userInfo  d-flex column-gap-3 align-items-center">
+                        <div class="userInfoImg">
+                            <img src="assets/image-placeholder.png" alt="User Picture"
+                                class="img-fluid w-100 userImage">
+                        </div>
+
+                        <div class="userData">
+                            <h6 class="fs_mdm secondaryClr fw-normal">Welcome</h6>
+                            <p class="fs_xxsml secondaryClr fw-normal pt-2 pb-2">SC-172-125-82-211</p>
+                            <div class="d-flex column-gap-3 align-items-center">
+                                <h6 class="fs_mdm secondaryClr fw-normal">Status</h6>
+                                <button type="button"
+                                    class="btn btn-secondary btn-sm primaryBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadow">Good</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="userAction d-flex column-gap-4 align-items-center">
+                        <button type="button"
+                            class="btn btn-secondary btn-sm primaryBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadow">Good</button>
+                        <img src="assets/power-btn.png" alt="Logout Icon">
+                    </div>
+                </div>
+            </div>
+            <!-- ---------- User Manu start-------  -->
+
+            <!-- ------- Dashboard Info Section Start --------  -->
+            <section class="dashboardSection">
+                <div class="container">
+                    <h3 class="fontPop fw-medium fs_xlg px-4 primaryClr lh-lg">Dashboard</h3>
+                    <div class="dboardData">
+
+                        <!-- -------------- Information bar start------------  -->
+                        <div class="informationBar d-flex pt-3 pb-4 bg primaryBg align-items-center">
+                            <h3 class="fontPop fw-medium ps-4 fs_xxlg whiteClr ">Information <i
+                                    class="fa-solid fas fa-angle-right ps-2"></i></h3>
+
+                            <div class="d-flex column-gap-5 w-75 justify-content-center ">
+                                <!-- ------------------------------------  -->
+                                <div class="d-flex align-items-center column-gap-3">
+                                    <img src="assets/iscsi-san-ip.png" alt="Icon" class="infoIcon">
+                                    <div>
+                                        <h4 class="fontPop fw-bold fs_lg whiteClr">ISCSI SAN IP:</h4>
+                                        <p class="fw-normal fs_mdm whiteClr pt-2">192.168.10.255</p>
+                                    </div>
+                                </div>
+                                <!-- ------------------------------------  -->
+                                <!-- ------------------------------------  -->
+                                <div class="d-flex align-items-center column-gap-3">
+                                    <img src="assets/iscsi-san-ip.png" alt="Icon" class="infoIcon">
+                                    <div>
+                                        <h4 class="fontPop fw-bold fs_lg whiteClr">NAS LAN IP:</h4>
+                                        <p class="fw-normal fs_mdm whiteClr pt-2">192.168.10.255</p>
+                                    </div>
+                                </div>
+                                <!-- ------------------------------------  -->
+                                <!-- ------------------------------------  -->
+                                <div class="d-flex align-items-center column-gap-3">
+                                    <img src="assets/iscsi-san-ip.png" alt="Icon" class="infoIcon">
+                                    <div>
+                                        <h4 class="fontPop fw-bold fs_lg whiteClr">ISCSI LAN IP:</h4>
+                                        <p class="fw-normal fs_mdm whiteClr pt-2">192.168.10.255</p>
+                                    </div>
+                                </div>
+                                <!-- ------------------------------------  -->
+                            </div>
+                        </div>
+                        <!-- -------------- Information bar End------------  -->
+
+                        <!-- ----CPU AND Network div start ------  -->
+                        <div class="cpuCard blackShadow d-flex">
+                            <div class="col-lg-2 m-0 p-0">
+                                <img src="assets/right-triangle.png" alt="Triangle" class="img-fluid w-100 h-auto ">
+                            </div>
+                            <div class="col-lg-8 cnItem d-flex">
+                                <div class="w-50">
+                                    <h3 class="fontPop fw-medium text-center fs_xxlg dashBordItemTitle pb-3">CPU &
+                                        Memory</h3>
+                                    <img src="assets/cpu-and-memory.png" alt="cpu and memory"
+                                        class="cpuImg img-fluid w-100 h-auto">
+                                </div>
+                                <div class="deviderBold"></div>
+                                <div class="w-50">
+                                    <h3 class="fontPop fw-medium text-center fs_xxlg dashBordItemTitle pb-4">Network
+                                        Utilization</h3>
+                                    <img src="assets/network-utilization.png" alt="cpu and memory"
+                                        class="cpuImg img-fluid w-100 h-auto">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="assets/left-triangle.png" alt="Triangle" class="img-fluid w-100 h-auto ">
+                            </div>
+
+                        </div>
+                        <!-- ----CPU AND Network div End ------  -->
+                        <div class="d-flex justify-content-between">
+                            <!-- ------------------------------------  -->
+                            <div class="itemCard blackShadow d-flex primaryBg">
+                                <div class="col-lg-8">
+                                    <h4 class="fontPop fw-bold fs_lg whiteClr">Concentrator Type</h4>
+                                    <p class="fw-normal fs_xsml whiteClr pt-3 lh-base">Name: SC-192-168-10-250 <br>
+                                        MGMT: 192.168.10.250 <br>
+                                        ISCSI IP: 192.168.10.250</p>
+                                </div>
+                                <div class="col-lg-4 align-self-end">
+                                    <img src="assets/Concentrator.png" alt="Image" class="img-fluid w-100 h-auto">
+                                </div>
+                            </div>
+                            <!-- ------------------------------------  -->
+                            <!-- ------------------------------------  -->
+                            <div class="itemCard blackShadow d-flex primaryBg">
+                                <div class="col-lg-8">
+                                    <h4 class="fontPop fw-bold fs_lg whiteClr">Quick Links</h4>
+                                    <h4 class="fontPop fw-bold fs_lg whiteClr pt-3 lh-base">Customer <br>
+                                        Support</h4>
+                                </div>
+                                <div class="col-lg-4 align-self-end">
+                                    <img src="assets/customer-support.png" alt="Image"
+                                        class="img-fluid w-100 h-auto ps-4">
+                                </div>
+                            </div>
+                            <!-- ------------------------------------  -->
+                            <!-- ------------------------------------  -->
+                            <div class="itemCard blackShadow d-flex primaryBg">
+                                <div class="col-lg-8">
+                                    <h4 class="fontPop fw-bold fs_lg whiteClr">Discovered SC’s</h4>
+                                    <p class="fw-normal fs_xsml whiteClr pt-3 pb-4 lh-base"> SC-192-168-10-250 <br>
+                                        SC-192-168-10-250</p>
+                                    <button type="button"
+                                        class="btn btn-secondary btn-sm whiteBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadow darkClr">Open</button>
+                                </div>
+                                <div class="col-lg-4 align-self-end">
+                                    <img src="assets/discovered-sc's.png" alt="Image" class="img-fluid w-100 h-auto">
+                                </div>
+                            </div>
+                            <!-- ------------------------------------  -->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ------- Dashboard Info Section End --------  -->
+
+            <!-- --------  Resourse Section Start ----- -->
+            <section class="resources ">
+                <div class="container">
+                    <h3 class="fontPop fw-medium fs_xxlg px-4 primaryClr lh-lg">Resources</h3>
+                    <div class="whiteBg blackShadow h-25">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Path</th>
+                                <th>Total Space (GIB)</th>
+                                <th>Used (GIB)</th>
+                                <th>Free (GIB)</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"></td>
+
+                            </tr>
+                          </table>
+
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- --------  Resourse Section End ----- -->
+
 
         </main>
         <!-- ------- Body part End -----  -->
