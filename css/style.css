@@ -23,10 +23,10 @@ h1,h2,h3,h4,h5,h6, p{
 }
 
 .container{
-    width: 950px;
+    max-width: 950px;
     margin: 0 auto;
 }
-.divFlex{
+.bodyFlex{
     display: flex;
 }
 .textCntr{
@@ -53,19 +53,19 @@ h1,h2,h3,h4,h5,h6, p{
 }
 .fs_sml{
     font-size: 13px;
-    line-height: 20x;
+    line-height: 20px;
 }
 .fs_mdm{
     font-size: 14px;
-    line-height: 20x;
+    line-height: 20px;
 }
 .fs_lg{
     font-size: 16px;
-    line-height: 24x;
+    line-height: 24px;
 }
 .fs_xlg{
     font-size: 18px;
-    line-height: 24x;
+    line-height: 24px;
 }
 .fs_xxlg{
     font-size: 20px;
@@ -131,8 +131,7 @@ h1,h2,h3,h4,h5,h6, p{
 
 /* ------Navigation Bar css start -----  */
 .navbar{
-    width: 320px;
-    min-height: 100vh;
+    width: 25%;
     padding: 23px 0px 30px;
 }
 .logoDiv{
@@ -152,7 +151,7 @@ h1,h2,h3,h4,h5,h6, p{
     width: 100%;
 }
 .dashbordText {
-    width: 310px;
+    width: 97%;
     margin: 0px 0px 0px auto;
     border-radius: 6px;
     position: relative;
@@ -189,11 +188,15 @@ h1,h2,h3,h4,h5,h6, p{
     --bs-dropdown-padding-x: .5rem;
     --bs-dropdown-padding-y: 0rem;
     --bs-dropdown-spacer: 0rem;
+    /* display: block; */
+}
+.dropdown-menu.dropdownSubMenu{
+    --bs-dropdown-padding-x: .5rem;
+    --bs-dropdown-padding-y: 0rem;
+    --bs-dropdown-spacer: 0rem;
     display: block;
 }
-/* .dropdown-menu.show {
-    display: none;
-} */
+
 .dropdown-item:focus, .dropdown-item:hover {
     color: inherit;
     background-color: transparent;
@@ -224,8 +227,8 @@ h1,h2,h3,h4,h5,h6, p{
 
 /* -----------User Nav CSS------  */
 .userInfoImg{
-    height: 84px;
-    width: 84px;
+    height: 76px;
+    width: 76px;
     background: #D9D9D9;
     line-height: 0;
     border-radius: 100%;
@@ -248,6 +251,17 @@ h1,h2,h3,h4,h5,h6, p{
 }
 .blueShadow{
     box-shadow: 1px 4px 10px #1F64FF40;
+}
+.blueShadowHover{
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.blueShadowHover:hover{
+    box-shadow: 1px 4px 10px #1F64FF40;
+
 }
 
 /* -----------User Nav CSS------  */
@@ -317,9 +331,119 @@ h1,h2,h3,h4,h5,h6, p{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.itemCardBtn{
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.itemCardBtn:hover{
+   background: #ffffff;
+   color: #414F65;
+   box-shadow: 1px 4px 10px #1F64FF40;
+}
 /* ----- Dashboard Info Section End ------ */
 /* ---------------------------  */
 /* --------  Resourse Section Start -----  */
+.progress, .progress-stacked {
+    height: 23px;
+    margin-top: -3px;
+}
+.progress-bar{
+    height: 18px;
+    margin: 5px 0px 1px;
+    align-items: flex-end;
+    padding-right: 8px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+th,td{
+    width: 16.5%;
+    text-align: center;
+}
+th{
+    background: #F2F3F4!important;
+    padding: 20px 0px 15px !important;
+}
+td{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #000022;
+}
+.table-bordered{
+    border: 2px solid #606060;
+}
+.table-bordered>:not(caption)>*>* {
+    border-width: 2 var(--bs-border-width);
+}
+
+.rsosIndicator{
+    height: 12px;
+    position: relative;
+    width: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.rsosIndicator::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.indicatorOne{
+    background: #0171BC;
+}
+.indicatorOne.rsosIndicator::before{
+    border: 1px solid #0171BC;
+    transform: translate(-48%, -48%);
+    -webkit-transform: translate(-48%, -48%);
+    -moz-transform: translate(-48%, -48%);
+    -ms-transform: translate(-48%, -48%);
+    -o-transform: translate(-48%, -48%);
+}
+.indicatorTwo{
+    background: #00BCBA;
+}
+.indicatorTwo.rsosIndicator::before{
+    border: 1px solid #00BCBA;
+    transform: translate(-48%, -48%);
+    -webkit-transform: translate(-48%, -48%);
+    -moz-transform: translate(-48%, -48%);
+    -ms-transform: translate(-48%, -48%);
+    -o-transform: translate(-48%, -48%);
+}
+.indicatorThree{
+    background: #1EA2CA;
+}
+.indicatorThree.rsosIndicator::before{
+    border: 1px solid #1EA2CA;
+    transform: translate(-52%, -48%);
+    -webkit-transform: translate(-52%, -48%);
+    -moz-transform: translate(-52%, -48%);
+    -ms-transform: translate(-52%, -48%);
+    -o-transform: translate(-52%, -48%);
+}
 
 /* --------  Resourse Section END -----  */
 /* ---------------------------  */

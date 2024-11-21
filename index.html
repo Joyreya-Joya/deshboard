@@ -21,15 +21,16 @@
 
     <!-- CSS Link --- -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <!-- CSS Link --- -->
 
 </head>
 
 <body class="fontMon">
-    <section class="divFlex">
+    <section class="bodyFlex">
         <!------ Navigation Bar Star --------  -->
         <nav class="navbar navbar-expand-lg primaryBg align-items-start">
-            <div class="container-fluid flex-column p-0">
+            <div class="container-fluid flex-lg-column flex-row  p-0">
                 <div class="textCntr pb-4">
                     <div class="logoDiv mb-2">
                         <img src="assets/Stonefly-logo.png" alt="LOGO">
@@ -52,10 +53,10 @@
                                 aria-expanded="false">
                                 SAN <i class="fa-solid fa-angle-down px-2"></i>
                             </a>
-                            <ul class="dropdown-menu bg-transparent border-0">
+                            <ul class=" dropdown-menu bg-transparent border-0">
                                 <li><a class="dropdown-item" href="#">Volume <i
                                             class="fa-solid fa-angle-down px-2"></i></a>
-                                    <ul class="dropdown-menu bg-transparent border-0">
+                                    <ul class="dropdown-menu bg-transparent border-0 dropdownSubMenu">
                                         <li><a class="dropdown-item mx-3" href="#">Create New Volume</a>
                                             <ul class="dropdown-menu bg-transparent border-0 mx-4">
                                                 <li><a class="dropdown-item" href="#">Auto Create</a></li>
@@ -182,12 +183,12 @@
         <!------ Navigation Bar End --------  -->
 
         <!-- ------- Body part start -----  -->
-        <main class="whiteBg w-100 mx-auto">
+        <main class="whiteBg w-100 mx-auto mb-4">
             <div class="container">
 
                 <!-- ---------- User Manu start-------  -->
                 <div class="userNav  d-flex justify-content-between align-items-start">
-                    <div class="userInfo  d-flex column-gap-3 align-items-center">
+                    <div class="userInfo  d-flex column-gap-3 align-items-end">
                         <div class="userInfoImg">
                             <img src="assets/image-placeholder.png" alt="User Picture"
                                 class="img-fluid w-100 userImage">
@@ -199,14 +200,14 @@
                             <div class="d-flex column-gap-3 align-items-center">
                                 <h6 class="fs_mdm secondaryClr fw-normal">Status</h6>
                                 <button type="button"
-                                    class="btn btn-secondary btn-sm primaryBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadow">Good</button>
+                                    class="btn btn-secondary btn-sm primaryBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadowHover">Good</button>
                             </div>
                         </div>
 
                     </div>
                     <div class="userAction d-flex column-gap-4 align-items-center">
                         <button type="button"
-                            class="btn btn-secondary btn-sm primaryBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadow">Good</button>
+                            class="btn btn-secondary btn-sm primaryBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadowHover">Support</button>
                         <img src="assets/power-btn.png" alt="Logout Icon">
                     </div>
                 </div>
@@ -221,10 +222,10 @@
 
                         <!-- -------------- Information bar start------------  -->
                         <div class="informationBar d-flex pt-3 pb-4 bg primaryBg align-items-center">
-                            <h3 class="fontPop fw-medium ps-4 fs_xxlg whiteClr ">Information <i
+                            <h3 class="fontPop fw-medium ps-4 fs_xxlg whiteClr">Information <i
                                     class="fa-solid fas fa-angle-right ps-2"></i></h3>
 
-                            <div class="d-flex column-gap-5 w-75 justify-content-center ">
+                            <div class="d-flex column-gap-5 w-75 justify-content-center informationBarInfos">
                                 <!-- ------------------------------------  -->
                                 <div class="d-flex align-items-center column-gap-3">
                                     <img src="assets/iscsi-san-ip.png" alt="Icon" class="infoIcon">
@@ -262,14 +263,14 @@
                                 <img src="assets/right-triangle.png" alt="Triangle" class="img-fluid w-100 h-auto ">
                             </div>
                             <div class="col-lg-8 cnItem d-flex">
-                                <div class="w-50">
+                                <div class="w-50 fullWidth">
                                     <h3 class="fontPop fw-medium text-center fs_xxlg dashBordItemTitle pb-3">CPU &
                                         Memory</h3>
                                     <img src="assets/cpu-and-memory.png" alt="cpu and memory"
                                         class="cpuImg img-fluid w-100 h-auto">
                                 </div>
                                 <div class="deviderBold"></div>
-                                <div class="w-50">
+                                <div class="w-50 fullWidth">
                                     <h3 class="fontPop fw-medium text-center fs_xxlg dashBordItemTitle pb-4">Network
                                         Utilization</h3>
                                     <img src="assets/network-utilization.png" alt="cpu and memory"
@@ -282,7 +283,7 @@
 
                         </div>
                         <!-- ----CPU AND Network div End ------  -->
-                        <div class="d-flex justify-content-between">
+                        <div class="allItemCards d-flex justify-content-between">
                             <!-- ------------------------------------  -->
                             <div class="itemCard blackShadow d-flex primaryBg">
                                 <div class="col-lg-8">
@@ -316,7 +317,7 @@
                                     <p class="fw-normal fs_xsml whiteClr pt-3 pb-4 lh-base"> SC-192-168-10-250 <br>
                                         SC-192-168-10-250</p>
                                     <button type="button"
-                                        class="btn btn-secondary btn-sm whiteBg fw-semibold fs_sml rounded-pill lh-sm px-3 blueShadow darkClr">Open</button>
+                                        class="btn btn-secondary btn-sm whiteBg fw-semibold fs_sml rounded-pill lh-sm px-3  darkClr itemCardBtn">Open</button>
                                 </div>
                                 <div class="col-lg-4 align-self-end">
                                     <img src="assets/discovered-sc's.png" alt="Image" class="img-fluid w-100 h-auto">
@@ -333,17 +334,40 @@
             <!-- --------  Resourse Section Start ----- -->
             <section class="resources ">
                 <div class="container">
-                    <h3 class="fontPop fw-medium fs_xxlg px-4 primaryClr lh-lg">Resources</h3>
+                    <div class="resourceHead d-flex justify-content-between pb-3">
+                        <h3 class="fontPop fw-medium fs_xxlg px-4 primaryClr lh-lg">Resources</h3>
+                        <div class="d-flex column-gap-4">
+                            <!-- -----------------------  -->
+                            <div class="d-flex justify-content-center align-items-center column-gap-2">
+                                <div class="indicatorOne rsosIndicator "></div>
+                                <p class="fontPop fs_mdm darkClr fw-medium">Used</p>
+                            </div>
+                            <!-- -----------------------  -->
+                            <!-- -----------------------  -->
+                            <div class="d-flex justify-content-center align-items-center column-gap-2">
+                                <div class="indicatorTwo rsosIndicator"></div>
+                                <p class="fontPop fs_mdm fw-medium darkClr">Available</p>
+                            </div>
+                            <!-- -----------------------  -->
+                            <!-- -----------------------  -->
+                            <div class="d-flex justify-content-center align-items-center column-gap-2">
+                                <div class="indicatorThree rsosIndicator"></div>
+                                <p class="fontPop fs_mdm fw-medium darkClr">Not Managed</p>
+                            </div>
+                            <!-- -----------------------  -->
+                        </div>
+                    </div>
                     <div class="whiteBg blackShadow h-25">
                         <table class="table table-bordered">
                             <tr>
-                                <th>Image</th>
-                                <th>Name</th>
-                                <th>Path</th>
-                                <th>Total Space (GIB)</th>
-                                <th>Used (GIB)</th>
-                                <th>Free (GIB)</th>
+                                <th class="fontPop fw-medium fs_lg">Image</th>
+                                <th class="fontPop fw-medium fs_lg">Name</th>
+                                <th class="fontPop fw-medium fs_lg">Path</th>
+                                <th class="fontPop fw-medium fs_lg">Total Space <br> (GIB)</th>
+                                <th class="fontPop fw-medium fs_lg">Used <br> (GIB)</th>
+                                <th class="fontPop fw-medium fs_lg">Free <br> (GIB)</th>
                             </tr>
+                            <!-- -----------------------  -->
                             <tr>
                                 <td></td>
                                 <td>Lorem Ipsem</td>
@@ -353,9 +377,69 @@
                                 <td>Lorem Ipsem</td>
                             </tr>
                             <tr>
-                                <td colspan="6"></td>
+                                <td colspan="6" class="p-0">
+                                    <div class="progress availableBg" role="progressbar" aria-label="Warning example" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar usedBg" style="width: 91%">91%</div>
+                                      </div>
+                                </td>
 
                             </tr>
+                            <!-- -----------------------  -->
+                            <!-- -----------------------  -->
+                            <tr>
+                                <td></td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="p-0">
+                                    <div class="progress availableBg" role="progressbar" aria-label="Warning example" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar usedBg" style="width: 56%">56%</div>
+                                      </div>
+                                </td>
+
+                            </tr>
+                            <!-- -----------------------  -->
+                            <!-- -----------------------  -->
+                            <tr>
+                                <td></td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="p-0">
+                                    <div class="progress availableBg" role="progressbar" aria-label="Warning example" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar usedBg" style="width: 48%"></div>
+                                      </div>
+                                </td>
+
+                            </tr>
+                            <!-- -----------------------  -->
+                             <!-- -----------------------  -->
+                            <tr>
+                                <td></td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                                <td>Lorem Ipsem</td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="p-0">
+                                    <div class="progress availableBg" role="progressbar" aria-label="Warning example" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar usedBg" style="width: 91%">91%</div>
+                                      </div>
+                                </td>
+
+                            </tr>
+                            <!-- -----------------------  -->
+
                           </table>
 
 
